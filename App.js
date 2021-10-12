@@ -1,23 +1,42 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, TouchableHighlight, View, Image, SafeAreaView, Button } from 'react-native';
+import { 
+  Dimensions,
+  StyleSheet, 
+  Text, 
+  TouchableHighlight, 
+  View, 
+  Image, 
+  SafeAreaView, 
+  Button 
+} from 'react-native';
+import { useDimensions } from '@react-native-community/hooks';
 
 export default function App() {
+  console.log(useDimensions());
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>HELLO WORLD!</Text>
-      <TouchableHighlight onPress={() => console.log("Image tapped")}>
-
-      <Image source={{ 
-        width: 200,
-        height: 300,
-        uri: "https://picsum.photos/200/300",}}/>
-
-      </TouchableHighlight>
-      <Button 
-      color="orange"
-      title="click me" onPress={() => console.log("button clicked")}/>
-    </SafeAreaView>
+    //<SafeAreaView style={styles.container}>
+      <View
+        style={{
+          backgroundColor: "#fff",
+          flex: 1,
+        }}>
+        <View style={{
+          backgroundColor: "dodgerblue",
+          flex: 2,}}
+          />
+      
+        <View style={{
+          backgroundColor: "gold",
+          flex: 1,}}
+          />
+      
+        <View style={{
+          backgroundColor: "tomato",
+          flex: 1,}}
+          />
+      </View>
+    //</SafeAreaView>
   );
 }
 
@@ -25,7 +44,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    //alignItems: 'center',
+    //justifyContent: 'center',
   },
 });
