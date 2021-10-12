@@ -16,7 +16,7 @@ import MapView from './screens/MapView';
 
 export default function App() {
 
-  return <MapView/>
+  return <HomeScreen/>
 }
 
 const styles = StyleSheet.create({
