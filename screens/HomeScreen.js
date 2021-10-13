@@ -12,9 +12,15 @@ function HomeScreen(props) {
     //        <View style={styles.regbutton} ></View>
     //    </ImageBackground>
     <SafeAreaView style={styles.background}>
-        <View style={styles.container}>
-        <TextInput style={styles.searchIn} placeholder='Search here....'/>
-    </View>
+        <View style={styles.header}></View>
+
+        <View style={styles.search}>
+            <TextInput style={styles.searchInput} placeholder='Search here'/>
+        </View>
+
+        <View style={styles.categories}></View>
+        
+        <View style={styles.recents}></View>
     </SafeAreaView>
     
     );
@@ -23,32 +29,35 @@ function HomeScreen(props) {
 const styles = StyleSheet.create({
     background: {
         flex: 1,
-        //justifyContent: "flex-end",
-        backgroundColor: "gold"
+        backgroundColor: "gold",
     },
-    container: {
-        width: '100%',
+    header: {
+        height: '10%',
+        backgroundColor: "pink",
+    },
+    search: {
+        height: '10%',
+        backgroundColor: "blue",
+    },
+    searchInput: {
         height: 50,
+        width: '90%',
         backgroundColor: "white",
-        borderRadius: 8,
-        paddingLeft: 10,
+        alignSelf: "center", //centred horizontally
+        top: '15%',
+        borderRadius: 10,
+        borderColor: "black",
+        borderWidth: 2,
     },
-    searchIn: {
-        width: '100%',
-        height: '100%',
-        paddingLeft: 8,
-        fontSize: 16,
+    categories: {
+        height: '30%',
+        backgroundColor: "red",
     },
-    // loginbutton: {
-    //     width: '100%',
-    //     height: 70,
-    //     backgroundColor: "green"
-    // },
-    // regbutton: {
-    //     width: '100%',
-    //     height: 70,
-    //     backgroundColor: "blue"
-    // }
+    recents: {
+        height: '50%',
+        backgroundColor: "green",
+    },
+    
 });
 
 export default HomeScreen;
