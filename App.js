@@ -14,24 +14,30 @@ import { useDimensions } from "@react-native-community/hooks";
 import HomeScreen from "./screens/HomeScreen";
 import MapView from "./screens/MapView";
 import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator, createAppContainer } from "react-navigation";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-export default class App extends React.Component {
-  render() {
-    return <AppContainer />;
-  }
-}
+const Stack = createNativeStackNavigator();
 
-const AppNavigator = createStackNavigator({
-  Home: {
-    screen: HomeScreen,
-  },
-  MapView: {
-    screen: MapView,
-  },
-});
+const App = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{ title: "Welcome" }}
+        />
+        <Stack.Screen
+          name="MapView"
+          component={MapView}
+          options={{ title: "map" }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
 
-const AppContainer = createAppContainer(AppNavigator);
+export default App;
 
 const styles = StyleSheet.create({
   container: {

@@ -9,8 +9,10 @@ import {
   TouchableHighlight,
   View,
 } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-function HomeScreen(props) {
+function HomeScreen({ navigation }) {
   //const pageName = "Home";
   return (
     <SafeAreaView style={styles.background}>
@@ -28,9 +30,7 @@ function HomeScreen(props) {
       <View style={styles.recents}>
         <Text style={styles.categoryText}>Recents</Text>
         <View style={styles.row}>
-          <TouchableHighlight
-            onPress={() => this.props.navigation.navigate("MapView")}
-          >
+          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
             <Image
               style={styles.buildings}
               source={require("../app/assets/building1.jpg")}
