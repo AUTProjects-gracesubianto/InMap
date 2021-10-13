@@ -10,7 +10,6 @@ import {
   SafeAreaView,
   Button,
 } from "react-native";
-import { useDimensions } from "@react-native-community/hooks";
 import HomeScreen from "./screens/HomeScreen";
 import MapView from "./screens/MapView";
 import { NavigationContainer } from "@react-navigation/native";
@@ -21,17 +20,9 @@ const Stack = createNativeStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{ title: "Welcome" }}
-        />
-        <Stack.Screen
-          name="MapView"
-          component={MapView}
-          options={{ title: "map" }}
-        />
+      <Stack.Navigator style={styles.header}>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="MapView" component={MapView} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -42,8 +33,9 @@ export default App;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    //alignItems: 'center',
-    //justifyContent: 'center',
+    backgroundColor: "gold",
+  },
+  header: {
+    backgroundColor: "gold",
   },
 });

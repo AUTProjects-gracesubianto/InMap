@@ -1,43 +1,40 @@
-import React from 'react';
-import { Image, StyleSheet, View } from 'react-native';
+import React from "react";
+import { Image, ImageBackground, StyleSheet, View } from "react-native";
 
 function MapView(props) {
-    return (
-        <View style={styles.container}>
-            <View style={styles.close}></View>
-            <View style={styles.del}></View>
-            <Image style={styles.image} source={require("../app/assets/InMap.png")}/>
-        </View>
-    );
+  return (
+    <View style={styles.container}>
+      <ImageBackground
+        style={styles.background}
+        source={require("../app/assets/buildingMap.jpeg")}
+      >
+        <Image
+          style={styles.zoom}
+          source={require("../app/assets/miniMap.jpeg")}
+        ></Image>
+      </ImageBackground>
+    </View>
+  );
 }
 const styles = StyleSheet.create({
-    close: {
-        width: 50,
-        height: 50,
-        backgroundColor: "red",
-        position: "absolute",
-        top: 30,
-        left: 40,
+  zoom: {
+    backgroundColor: "blue",
+    height: 150,
+    width: 200,
+    //justifyContent: "center",
+    justifyContent: "flex-end",
+    borderWidth: 10,
+    borderColor: "white",
+    left: "40%",
+    top: "55%",
+  },
+  background: {
+    //flex: 1,
+    height: "120%",
+    width: "120%",
 
-    },
-    container: {
-        backgroundColor: "blue",
-        flex: 1,
-    },
-    del: {
-        width: 50,
-        height: 50,
-        backgroundColor: "green",
-        position: "absolute",
-        top: 30,
-        right: 40,
-    },
-    image: {
-        width: '100%',
-        height: '100%',
-        justifyContent: "center"
-        
-    }
-})
+    //justifyContent: "center",
+  },
+});
 
 export default MapView;

@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Button,
   Image,
   ImageBackground,
   SafeAreaView,
@@ -16,15 +17,13 @@ function HomeScreen({ navigation }) {
   //const pageName = "Home";
   return (
     <SafeAreaView style={styles.background}>
-      <View style={styles.header}>
-        <Text style={styles.home}>Home</Text>
-      </View>
       <View style={styles.search}>
         <TextInput style={styles.searchInput} placeholder="Search here" />
       </View>
 
       <View style={styles.categories}>
         <Text style={styles.categoryText}>Categories</Text>
+        <Button style={styles.button} title="Museums" />
       </View>
 
       <View style={styles.recents}>
@@ -92,7 +91,7 @@ const styles = StyleSheet.create({
     backgroundColor: "pink",
   },
   search: {
-    height: "10%",
+    flex: 0.75,
     backgroundColor: "gold",
   },
   searchInput: {
@@ -100,19 +99,19 @@ const styles = StyleSheet.create({
     width: "90%",
     backgroundColor: "white",
     alignSelf: "center", //centred horizontally
-    top: "20%",
+    top: "30%",
     borderRadius: 10,
     borderColor: "black",
     borderWidth: 2,
     paddingLeft: 20,
   },
   categories: {
-    height: "30%",
+    flex: 2,
     backgroundColor: "red",
   },
   categoryText: {
-    top: "3%",
-    left: "5%",
+    top: "5%",
+    left: "8%",
     fontSize: 25,
     color: "black",
     bottom: 20,
@@ -127,7 +126,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   recents: {
-    height: "50%",
+    flex: 3,
     backgroundColor: "gold",
     flexDirection: "row",
     justifyContent: "space-around",
@@ -139,12 +138,14 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   row: {
-    top: 30,
+    top: 35,
     right: 40,
     justifyContent: "space-evenly",
-    //justifyContent: "center",
-    //left: 10,
-    //alignSelf: "center",
+  },
+  button: {
+    height: 20,
+    width: 60,
+    backgroundColor: "white",
   },
 });
 
