@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Button,
   Image,
   SafeAreaView,
   StyleSheet,
@@ -12,6 +11,18 @@ import {
 } from "react-native";
 
 function HomeScreen({ navigation }) {
+  // const [dataSource] = useState([
+  //   "building1",
+  //   "building2",
+  //   "building3",
+  //   "building4",
+  //   "building5",
+  //   "building6",
+  //   "building7",
+  //   "building8",
+  // ]);
+  // const [filtered, setFiltered] = useState(dataSource);
+  // const [searching, setSearching] = useState(false);
   return (
     <SafeAreaView style={styles.background}>
       {/* {search bar section} */}
