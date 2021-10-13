@@ -28,7 +28,9 @@ function HomeScreen(props) {
       <View style={styles.recents}>
         <Text style={styles.categoryText}>Recents</Text>
         <View style={styles.row}>
-          <TouchableHighlight onPress={() => console.log("building1 pressed")}>
+          <TouchableHighlight
+            onPress={() => this.props.navigation.navigate("MapView")}
+          >
             <Image
               style={styles.buildings}
               source={require("../app/assets/building1.jpg")}
