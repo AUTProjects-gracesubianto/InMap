@@ -36,45 +36,61 @@ function HomeScreen({ navigation }) {
             />
           </TouchableHighlight>
 
-          <Image
-            style={styles.buildings}
-            source={require("../app/assets/building2.jpg")}
-          />
+          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
+            <Image
+              style={styles.buildings}
+              source={require("../app/assets/building2.jpg")}
+            />
+          </TouchableHighlight>
 
-          <Image
-            style={styles.buildings}
-            source={require("../app/assets/building3.jpg")}
-          />
+          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
+            <Image
+              style={styles.buildings}
+              source={require("../app/assets/building3.jpg")}
+            />
+          </TouchableHighlight>
         </View>
 
         <View style={styles.row}>
-          <Image
-            style={styles.buildings}
-            source={require("../app/assets/building4.jpg")}
-          />
-          <Image
-            style={styles.buildings}
-            source={require("../app/assets/building5.jpg")}
-          />
-          <Image
-            style={styles.buildings}
-            source={require("../app/assets/building6.jpg")}
-          />
+          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
+            <Image
+              style={styles.buildings}
+              source={require("../app/assets/building4.jpg")}
+            />
+          </TouchableHighlight>
+          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
+            <Image
+              style={styles.buildings}
+              source={require("../app/assets/building5.jpg")}
+            />
+          </TouchableHighlight>
+          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
+            <Image
+              style={styles.buildings}
+              source={require("../app/assets/building6.jpg")}
+            />
+          </TouchableHighlight>
         </View>
 
         <View style={styles.row}>
-          <Image
-            style={styles.buildings}
-            source={require("../app/assets/building7.jpg")}
-          />
-          <Image
-            style={styles.buildings}
-            source={require("../app/assets/building8.jpg")}
-          />
-          <Image
-            style={styles.buildings}
-            source={require("../app/assets/building9.jpg")}
-          />
+          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
+            <Image
+              style={styles.buildings}
+              source={require("../app/assets/building7.jpg")}
+            />
+          </TouchableHighlight>
+          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
+            <Image
+              style={styles.buildings}
+              source={require("../app/assets/building8.jpg")}
+            />
+          </TouchableHighlight>
+          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
+            <Image
+              style={styles.buildings}
+              source={require("../app/assets/building9.jpg")}
+            />
+          </TouchableHighlight>
         </View>
       </View>
     </SafeAreaView>
