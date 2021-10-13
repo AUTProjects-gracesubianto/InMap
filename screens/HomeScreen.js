@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
     top: "30%",
     borderRadius: 10,
     borderColor: "black",
-    borderWidth: 2,
+    borderWidth: 1,
     paddingLeft: 20,
   },
   categories: {
