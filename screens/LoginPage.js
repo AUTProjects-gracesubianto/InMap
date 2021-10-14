@@ -8,9 +8,11 @@ import {
   TextInput,
   Button,
   TouchableOpacity,
+  TouchableHighlight,
+  Pressable,
 } from "react-native";
 
-function LoginPage(props) {
+function LoginPage({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   return (
@@ -54,17 +56,18 @@ function LoginPage(props) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "gold",
     alignItems: "center",
     justifyContent: "center",
   },
 
   image: {
-    marginBottom: 40,
+    //marginBottom: 20,
+    height: 300,
   },
 
   inputView: {
-    backgroundColor: "#FFC0CB",
+    backgroundColor: "#ffad33",
     borderRadius: 30,
     width: "70%",
     height: 45,
@@ -92,7 +95,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginTop: 40,
-    backgroundColor: "#FF1493",
+    backgroundColor: "#00cc66",
   },
 });
 
