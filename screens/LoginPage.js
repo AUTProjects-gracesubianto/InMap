@@ -49,6 +49,9 @@ function LoginPage({ navigation }) {
       >
         <Text style={styles.loginText}>LOGIN</Text>
       </TouchableOpacity>
+      <TouchableOpacity style={styles.registerBtn}>
+        <Text style={styles.loginText}>REGISTER</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -64,15 +67,16 @@ const styles = StyleSheet.create({
   image: {
     //marginBottom: 20,
     height: 300,
+    bottom: 40,
   },
 
   inputView: {
-    backgroundColor: "#ffad33",
-    borderRadius: 30,
+    backgroundColor: "#ffffff",
+    borderRadius: 20,
     width: "70%",
     height: 45,
     marginBottom: 20,
-
+    borderWidth: 1,
     alignItems: "center",
   },
 
@@ -90,12 +94,21 @@ const styles = StyleSheet.create({
 
   loginBtn: {
     width: "80%",
-    borderRadius: 25,
+    borderRadius: 20,
     height: 50,
     alignItems: "center",
     justifyContent: "center",
-    marginTop: 40,
+    marginTop: 20,
     backgroundColor: "#00cc66",
+  },
+  registerBtn: {
+    width: "80%",
+    borderRadius: 20,
+    height: 50,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 20,
+    backgroundColor: "#ffa31a",
   },
 });
 
