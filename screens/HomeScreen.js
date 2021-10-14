@@ -11,23 +11,14 @@ import {
 } from "react-native";
 
 function HomeScreen({ navigation }) {
-  // const [dataSource] = useState([
-  //   "building1",
-  //   "building2",
-  //   "building3",
-  //   "building4",
-  //   "building5",
-  //   "building6",
-  //   "building7",
-  //   "building8",
-  // ]);
-  // const [filtered, setFiltered] = useState(dataSource);
-  // const [searching, setSearching] = useState(false);
   return (
     <SafeAreaView style={styles.background}>
       {/* {search bar section} */}
       <View style={styles.search}>
-        <TextInput style={styles.searchInput} placeholder="Search here" />
+        <TextInput
+          style={styles.searchInput}
+          placeholder="Search locations....."
+        />
       </View>
 
       {/* {category bars section} */}

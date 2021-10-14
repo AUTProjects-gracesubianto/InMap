@@ -6,7 +6,7 @@ function MapView(props) {
     <View style={styles.container}>
       <ImageBackground
         style={styles.background}
-        source={require("../app/assets/buildingMap.jpeg")}
+        source={require("../app/assets/miniMap.jpeg")}
       >
         <Image
           style={styles.zoom}
@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
     backgroundColor: "blue",
     height: 150,
     width: 200,
-    //justifyContent: "center",
     justifyContent: "flex-end",
     borderWidth: 10,
     borderColor: "white",
