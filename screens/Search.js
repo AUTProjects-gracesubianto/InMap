@@ -46,7 +46,7 @@ export default class App extends React.Component {
   });
 
   handleRestaurantSearch = () => {
-    console.log("here");
+    console.log("search starts");
     const url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?";
     const location = `location=${this.state.latitude},${this.state.longitude}`;
     const radius = "&radius=2000";
@@ -56,7 +56,7 @@ export default class App extends React.Component {
     fetch(restaurantSearchUrl)
       .then((response) => response.json())
       .then((result) => this.setState({ restaurantList: result }))
-      .catch((e) => console.log(e));
+      .catch((e) => console.log(e + "what"));
   };
 
   render() {
