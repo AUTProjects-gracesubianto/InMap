@@ -18,7 +18,7 @@ function HomeScreen({ navigation }) {
         <TextInput
           style={styles.searchInput}
           placeholder="Search locations....."
-        />
+        ></TextInput>
       </View>
 
       {/* {category bars section} */}
