@@ -7,6 +7,7 @@ import MapView2 from "./screens/MapView2";
 import MapView3 from "./screens/MapView3";
 import MapView4 from "./screens/MapView4";
 import LoginPage from "./screens/LoginPage";
+import Search from "./screens/Search";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
@@ -22,6 +23,7 @@ const App = () => {
         <Stack.Screen name="MapView2" component={MapView2} />
         <Stack.Screen name="MapView3" component={MapView3} />
         <Stack.Screen name="MapView4" component={MapView4} />
+        <Stack.Screen name="Search" component={Search} />
       </Stack.Navigator>
     </NavigationContainer>
   );

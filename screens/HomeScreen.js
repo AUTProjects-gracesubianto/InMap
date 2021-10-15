@@ -26,7 +26,12 @@ function HomeScreen({ navigation }) {
         <Text style={styles.categoryText}>Categories</Text>
         <View style={styles.row}>
           <Pressable style={styles.button}>
-            <Text style={styles.text}>Museums</Text>
+            <Text
+              style={styles.text}
+              onPress={() => navigation.navigate("Search")}
+            >
+              Museums
+            </Text>
           </Pressable>
           <Pressable style={styles.button}>
             <Text style={styles.text}>Hospitals</Text>
