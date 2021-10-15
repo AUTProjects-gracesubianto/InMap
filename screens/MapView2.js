@@ -1,25 +1,19 @@
 import React from "react";
 import { Image, ImageBackground, StyleSheet, View } from "react-native";
 
-const Circle = () => {
-  return <View style={styles.circle} />;
-};
+const random = Math.random();
 
 function MapView(props) {
   return (
     <View style={styles.container}>
       <ImageBackground
         style={styles.background}
-        source={require("../app/assets/building1Map.jpeg")}
+        source={require("../app/assets/building2Map.png")}
       >
         <Image
           style={styles.zoom}
-          source={require("../app/assets/miniMap.jpeg")}
+          source={require("../app/assets/building2Map.png")}
         ></Image>
-        {/* <Image
-          style={styles.zoo}
-          source={require("../app/assets/miniMap.jpeg")}
-        ></Image> */}
       </ImageBackground>
     </View>
   );

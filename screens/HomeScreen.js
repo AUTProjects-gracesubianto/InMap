@@ -51,19 +51,19 @@ function HomeScreen({ navigation }) {
         <Text style={styles.categoryText}>Recents</Text>
         {/* {first row of icons} */}
         <View style={styles.row}>
-          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
+          <TouchableHighlight onPress={() => navigation.navigate("MapView4")}>
             <Image
               style={styles.buildings}
               source={require("../app/assets/building1.jpg")}
             />
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
+          <TouchableHighlight onPress={() => navigation.navigate("MapView2")}>
             <Image
               style={styles.buildings}
               source={require("../app/assets/building2.jpg")}
             />
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
+          <TouchableHighlight onPress={() => navigation.navigate("MapView3")}>
             <Image
               style={styles.buildings}
               source={require("../app/assets/building3.jpg")}
@@ -72,19 +72,19 @@ function HomeScreen({ navigation }) {
         </View>
         {/* {second row of icons} */}
         <View style={styles.row}>
-          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
+          <TouchableHighlight onPress={() => navigation.navigate("MapView3")}>
             <Image
               style={styles.buildings}
               source={require("../app/assets/building4.jpg")}
             />
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
+          <TouchableHighlight onPress={() => navigation.navigate("MapView1")}>
             <Image
               style={styles.buildings}
               source={require("../app/assets/building5.jpg")}
             />
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
+          <TouchableHighlight onPress={() => navigation.navigate("MapView2")}>
             <Image
               style={styles.buildings}
               source={require("../app/assets/building6.jpg")}
@@ -93,19 +93,19 @@ function HomeScreen({ navigation }) {
         </View>
         {/* {third row of icons} */}
         <View style={styles.row}>
-          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
+          <TouchableHighlight onPress={() => navigation.navigate("MapView2")}>
             <Image
               style={styles.buildings}
               source={require("../app/assets/building7.jpg")}
             />
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
+          <TouchableHighlight onPress={() => navigation.navigate("MapView4")}>
             <Image
               style={styles.buildings}
               source={require("../app/assets/building8.jpg")}
             />
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigation.navigate("MapView")}>
+          <TouchableHighlight onPress={() => navigation.navigate("MapView1")}>
             <Image
               style={styles.buildings}
               source={require("../app/assets/building9.jpg")}
