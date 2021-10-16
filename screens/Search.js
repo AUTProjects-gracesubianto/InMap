@@ -1,23 +1,33 @@
-import React from "react";
-import { View } from "react-native";
+import React, { Component } from "react";
+import { StyleSheet, View } from "react-native";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
+import MapView, { PROVIDER_GOOGLE } from "react-native-maps";
 
-const Search = () => {
-  return (
-    <View>
-      <GooglePlacesAutocomplete
-        placeholder="Search"
-        onPress={(data, details = null) => {
-          // 'details' is provided when fetchDetails = true
-          console.log(data, details);
-        }}
-        query={{
-          key: "AIzaSyAlgHoPlHjeM3gZ6V5_GvdpyK4OSnurL6o",
-          language: "en",
-        }}
-      />
-    </View>
-  );
-};
+export default class Search extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <MapView
+          provider={PROVIDER_GOOGLE}
+          style={styles.map}
+          initialRegion={{
+            latitude: 37.788,
+            longitude: -122.43,
+            latitudeDelta: 0.0922,
+            longitudeDelta: 0.0421,
+          }}
+        ></MapView>
+      </View>
+    );
+  }
+}
 
-export default Search;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "red",
+  },
+  map: {
+    flex: 1,
+  },
+});
