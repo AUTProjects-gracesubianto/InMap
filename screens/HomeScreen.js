@@ -15,10 +15,14 @@ function HomeScreen({ navigation }) {
     <SafeAreaView style={styles.background}>
       {/* {search bar section} */}
       <View style={styles.search}>
-        <TextInput
+        <Pressable
           style={styles.searchInput}
-          placeholder="Search locations....."
-        ></TextInput>
+          onPress={() => navigation.navigate("Search")}
+        >
+          <Text style={{ fontSize: 16, marginTop: 15, color: "grey" }}>
+            Search locations...
+          </Text>
+        </Pressable>
       </View>
 
       {/* {category bars section} */}
@@ -26,12 +30,7 @@ function HomeScreen({ navigation }) {
         <Text style={styles.categoryText}>Categories</Text>
         <View style={styles.row}>
           <Pressable style={styles.button}>
-            <Text
-              style={styles.text}
-              onPress={() => navigation.navigate("Search")}
-            >
-              Museums
-            </Text>
+            <Text style={styles.text}>Museums</Text>
           </Pressable>
           <Pressable style={styles.button}>
             <Text style={styles.text}>Hospitals</Text>
@@ -137,10 +136,10 @@ const styles = StyleSheet.create({
   },
   searchInput: {
     height: 50,
-    width: "90%",
+    width: "80%",
     backgroundColor: "white",
     alignSelf: "center", //centred horizontally
-    top: "30%",
+    top: "40%",
     borderRadius: 10,
     borderColor: "black",
     borderWidth: 1,
