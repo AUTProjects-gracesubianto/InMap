@@ -11,8 +11,8 @@ export default class Search extends Component {
           provider={PROVIDER_GOOGLE}
           style={styles.map}
           initialRegion={{
-            latitude: 37.788,
-            longitude: -122.43,
+            latitude: -36.8509,
+            longitude: 174.7645,
             latitudeDelta: 0.0922,
             longitudeDelta: 0.0421,
           }}
