@@ -15,14 +15,14 @@ function HomeScreen({ navigation }) {
     <SafeAreaView style={styles.background}>
       {/* {search bar section} */}
       <View style={styles.search}>
-        <Pressable
+        <TouchableHighlight
           style={styles.searchInput}
           onPress={() => navigation.navigate("Search")}
         >
-          <Text style={{ fontSize: 16, marginTop: 15, color: "grey" }}>
-            Search locations...
+          <Text style={{ fontSize: 16, marginTop: 15, color: "black" }}>
+            Search Locations
           </Text>
-        </Pressable>
+        </TouchableHighlight>
       </View>
 
       {/* {category bars section} */}
@@ -137,22 +137,18 @@ const styles = StyleSheet.create({
   searchInput: {
     height: 50,
     width: "80%",
-    backgroundColor: "white",
+    backgroundColor: "#00cc66",
     alignSelf: "center", //centred horizontally
     top: "40%",
     borderRadius: 10,
-    borderColor: "black",
-    borderWidth: 1,
-    paddingLeft: 20,
+    //borderColor: "green",
+    //borderWidth: 1,
+    paddingLeft: 100,
   },
   categories: {
     flex: 2,
     backgroundColor: "gold",
-    //flexDirection: "row",
-    //flexWrap: "wrap",
-    //alignSelf: "center",
     justifyContent: "space-between",
-    //position: "relative",
   },
   categoryText: {
     top: "5%",

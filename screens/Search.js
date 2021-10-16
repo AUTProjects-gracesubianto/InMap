@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, TextInput, View } from "react-native";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 import MapView, { PROVIDER_GOOGLE } from "react-native-maps";
 
@@ -7,6 +7,11 @@ export default class Search extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <TextInput
+          style={styles.searchbar}
+          placeholder="Search location..."
+          placeholderTextColor="grey"
+        />
         <MapView
           provider={PROVIDER_GOOGLE}
           style={styles.map}
@@ -25,9 +30,15 @@ export default class Search extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "red",
+    backgroundColor: "white",
   },
   map: {
     flex: 1,
+  },
+  searchbar: {
+    height: 80,
+    paddingLeft: 40,
+    backgroundColor: "white",
+    textShadowColor: "pink",
   },
 });
