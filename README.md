@@ -10,6 +10,8 @@ An overview of the current progress has been shown below:
 
 <img src="README Images/App_Navigation.png" height="500">
 
+A short video of the developed features can be accessed through this link: https://www.youtube.com/watch?v=wwtrPZR29Ls
+
 ## Installation
 (Using Visual Studio Code)
 
