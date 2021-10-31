@@ -6,6 +6,10 @@ InMap is a context-aware mobile app for finding rooms inside a building (indoor 
 
 The application was created using the Visual Studio Code IDE, with the JavaScript programming language. The application was simulated using the Xcode IDE simulator and Expo simulation platform. 
 
+An overview of the current progress has been shown below:
+
+<img src="README Images/App_Navigation.png" height="500">
+
 ## Installation
 (Using Visual Studio Code)
 
@@ -26,6 +30,8 @@ sudo npm i -g expo-cli
 ## Building
 1. Install the Xcode IDE and run it. Go into the *Xcode* menu, select *Open Developer Tool* and then the *Simulator*.
 
+<img src="README Images/Xcode_Simulator.png" width="800">
+
 2. Select the iOS iPhone 11 device, as this is what this project has mainly been devleloped on.
 
 3. Run the project through the terminal by using
@@ -34,8 +40,16 @@ npm run ios
 ```
 This should open the project JavaScript Metro Bundler for React Native, reponsible for compiling the code and opening the simulator. This command in particular will run an iOS simulator using Xcode.
 
+<img src="README Images/Metro_Bundler.png" width="700">
+<img src="README Images/Simulator.png" width="700">
+
+4. When the simulator runs for the first time, you may need to grant permission.
+
+<img src="README Images/Expo_Xcode.png" height="200">
+
+
 ## Requirements
-Depending on the default dependencies, the prjoect may require extra installations. This includes the following:
+Depending on the default dependencies, the project may require extra installations. This includes the following:
 ```sh
 npm install expo-status-bar
 npm install react-navigation/native
@@ -44,8 +58,16 @@ npm install react-native-google-places-autocomplete
 npm install react-native-maps
 ```
 ## Resources
-Some resources used in the development of this project include:
-- hh
-- ii
+Some resources used or looked at in the development of this project include:
+- [React Native Tutorial for Beginners - Build a React Native App](https://www.youtube.com/watch?v=0-S5a0eXPoc)
+- [Expo CLI](https://www.npmjs.com/package/expo-cli)
+- [Login & Signup Screen UI Design Tutorial in React Native](https://www.youtube.com/watch?v=Rs72pRwXIzA&list=PLQWFhX-gwJbmmqcP-9zMXBaxQbGKfIJY2&index=6)
+- [React Native Maps](https://github.com/react-native-maps/react-native-maps)
+- [Layout with Flexbox](https://reactnative.dev/docs/flexbox)
+- [React-Native dropdown searchbar](https://swairaq.medium.com/react-native-dropdown-searchbar-adc4532f7535)
+- [How to use the FlatList Component — React Native Basics](https://medium.com/react-native-development/how-to-use-the-flatlist-component-react-native-basics-92c482816fe6)
+- [Common React Native App Layouts: Login Page](https://code.tutsplus.com/tutorials/common-react-native-app-layouts-login-page--cms-27639)
+- [Google Place Search in React Native](https://www.youtube.com/watch?v=KvnjOUFK0Cw)
+- [Restaurant Finder App with React Native](https://dev.to/kpete2017/how-i-made-a-restaurant-finder-app-with-react-native-part-1-1aic)
 
 
