@@ -71,5 +71,7 @@ Some resources used or looked at in the development of this project include:
 - [Common React Native App Layouts: Login Page](https://code.tutsplus.com/tutorials/common-react-native-app-layouts-login-page--cms-27639)
 - [Google Place Search in React Native](https://www.youtube.com/watch?v=KvnjOUFK0Cw)
 - [Restaurant Finder App with React Native](https://dev.to/kpete2017/how-i-made-a-restaurant-finder-app-with-react-native-part-1-1aic)
+- [React Native | Google Maps - Part 1](https://www.youtube.com/watch?v=hM7sNpgG1KQ&list=WL&index=54)
+- [How to Use Google Maps in React Native - Part 1](https://www.youtube.com/watch?v=AzjWv1X-uyg&list=WL&index=38)
 
 
